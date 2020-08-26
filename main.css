@@ -1,0 +1,14 @@
+body {
+  background: #2193b0;
+}
+
+#logo {
+  text-align: center;
+  margin: auto;
+  width: 450px;
+  padding-top: calc(15vw);
+}
+
+* {
+  color: white;
+}
