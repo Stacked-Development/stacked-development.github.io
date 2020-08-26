@@ -9,6 +9,8 @@ body {
   padding-top: calc(15vw);
 }
 
+img {max-width:100%}
+
 * {
   color: white;
 }
