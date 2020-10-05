@@ -96,6 +96,7 @@ img {max-width:100%}
 #content {
   animation: 4s ease 9s custom-fadein forwards;
   opacity: 0;
+  display:none;
 }
 
 
@@ -108,6 +109,9 @@ img {max-width:100%}
   from {
     opacity:0;
     display:none;
+  }
+  1%{
+    display: initial;
   }
 
   100% {
