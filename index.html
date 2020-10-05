@@ -6,11 +6,71 @@
   <title>Stacked Development, LLC</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <!-- <script type="application/javascript">
+    setTimeout(function () {
+      let sideBar = document.querySelector('#sidebar');
+      sideBar.classList.remove("center");
+      sideBar.classList.remove("logo-width-center");
+      sideBar.classList.add("logo-width-sidebar");
+    }, 2 * 1000)  
+  </script>  -->
+
+  
+
 </head>
 <body>
-  <div id="logo">
+  <div class="container">
+  <div id="sidebar" class="center logo-width-center">
     <img src="images/branding/logo_v3_hex_2193b0.png" alt="Stacked Development LLC" />
-    <p>A Denver, Colorado based consulting firm specializing in React, NodeJS and building enterprise systems.</p>
+    <div class="logo-text">
+      <p>A Denver, Colorado based consulting firm specializing in React, NodeJS and building enterprise systems.</p>
+    </div>
+
+    <div class="menu">
+      <hr /> 
+      <a href="#">Home</a> <br /> 
+      <a href="#">Home</a> <br /> 
+      <a href="#">Home</a> <br /> 
+      <a href="#">Home</a> <br /> 
+    </div>
   </div>
+
+  <div id="content">
+    <div id="typing">
+      This is the typing area
+    </div>
+
+    <div id="cards">
+      <div id="cards-title">
+        <h1>What we do</h1>
+      </div>
+      <div class="card">
+        <p>We build custom enterprise ready applications for some of the worlds biggest companies</p>
+      </div>
+
+      <div class="card">
+        <p>We're a Azure focused development shop.</p>
+      </div>
+
+      <div class="card">
+        <p>We build in the latest JavaScript technologies: VueJs, React, GraphQL, Typescript, NextJS and beyond </p>
+      </div>
+
+      <div class="card">
+        <p>We design systems that scale: from 5,000 users with 10,000 active records; to over a million active users</p>
+      </div>
+
+      <div class="card">
+        <p>We \<\3 compliance! From SOX, PCI to HIPAA we get it, so you don't have to</p>
+      </div>
+
+      <div class="card">
+        <p>We train and scale teams, your team or ours, we can quickly on board and train you on the latest and greatest</p>
+      </div>
+
+    </div>
+  </div>
+</div>
 </body>
 </html>
