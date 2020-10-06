@@ -94,8 +94,8 @@ img {max-width:100%}
 
 /*** Content Area ANIMATION ***/
 #content {
-  animation: 4s ease 9s custom-fadein forwards;
-  opacity: 0;
+  animation: 4s ease 9s custom-from-above forwards;
+  margin-top:-1000px;
   display:none;
 }
 
@@ -108,14 +108,27 @@ img {max-width:100%}
 @keyframes custom-fadein {
   from {
     opacity:0;
-    display:none;
+    display:block;
   }
   1%{
-    display: initial;
+    opacity: .01;
+    display: block;
   }
 
   100% {
     opacity:1;
-    display: inline;
+    display: block;
+  }
+}
+
+@keyframes custom-from-above {
+  from {
+    margin-top:-1000px;
+  }
+
+  to {
+    margin-top: 0;
+    display:block;
+
   }
 }
