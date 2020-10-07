@@ -27,17 +27,33 @@ html {
 
 body {
   background: #2193b0;
+  animation: 3s linear 10s custom-body-color-fade forwards;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin:0;
+  overflow:auto;
 }
 
 .container {
   display: flex;
+  min-height: 100%;
 }
+
+.boxShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 /******** LOGO ANIMATION ******/
 #sidebar {
   transition: all 3s;
   padding:10px;
   animation: 8s linear 1s custom-slide forwards;
+  background-color: #2193b0;
+  height: 100vh;
 }
 
 .logo-width-center {
@@ -46,7 +62,7 @@ body {
 
 .center {
   text-align: center;
-  margin: auto;
+  margin: auto auto auto 35%;
   margin-top: calc(15vw);
 }
 
@@ -63,14 +79,10 @@ img {max-width:100%}
 
 @keyframes custom-slide {
   from {
-    margin: auto auto auto 45%;
+    margin: auto auto auto 35%;
     margin-top: calc(15vw);
   }
 
-  /* 10% {
-    margin: auto auto auto 100px;
-    left: 40%;
-  } */
   100% {
     margin: auto auto auto 0;
     margin-top: 0;
@@ -96,12 +108,16 @@ img {max-width:100%}
 #content {
   animation: 4s ease 9s custom-from-above forwards;
   margin-top:-1000px;
-  display:none;
+  visibility: hidden;
+  position: absolute;
+  color: #000;
 }
 
+#content * {
+  color: #000;
+}
 
 /*** Content Area ANIMATION ***/
-
 
 /*** KEY FRAMES ****/
 
@@ -124,11 +140,27 @@ img {max-width:100%}
 @keyframes custom-from-above {
   from {
     margin-top:-1000px;
+    opacity:0;
+    visibility: visible;
+    position: relative;
+    margin-left: 25%;
   }
 
   to {
     margin-top: 0;
-    display:block;
+    opacity:1;
+    visibility: visible;
+    position: relative;
+    margin-left: 25%;
+  }
+}
 
+@keyframes custom-body-color-fade {
+  from {
+    background-color: #2193b0;
+  }
+
+  to {
+    background-color: #ffffff;
   }
 }
